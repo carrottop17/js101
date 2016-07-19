@@ -1,0 +1,102 @@
+<script type="text/javascript">
+	
+var student = "Shirlette";
+var student2 = "Jacksonious";
+var student3 = "JT";
+var student4 = "Summer";
+
+// array
+var students = [];
+students = ["Shirlette", "Jacksonious", "JT", "Summer"];
+
+var nfcSouthTeam1 = "Falcons";
+var nfcSouthTeam2 = "Saints";
+
+var nfcSouthTeams = ["Falcons", "Saints", "Bucs", "Panther"];
+
+// any datatype can go in any position
+// -Booleans
+// _Numbers
+// -strings
+// -objects
+// -array
+
+// In an array the first element will be 0.
+
+console.log(students);
+console.log(students[3]);
+students[14] = "Drew";
+
+// Cool things you can do to an array (methonds)
+students.pop(); // this will remove the last element on the array
+students.push(); // puts the element on the end of the array
+
+
+// Make an array with at least four student in class
+// prompt the user for their name
+// if they enter a name in the array then alert them, you are in class
+// else ask them if they want to join
+
+// var classMates = ["David", "JT", "Keith", "Summer"];
+// var name = prompt("What is your name?");
+// if (name === classMates[0]) {
+// 	console.log("You are in the class");
+// }else if (name === classMates[1]) {
+// 	console.log("You are in the class");
+// }else if (name === classMates[2]) {
+// 	console.log("You are in the class");
+// }else if (name === classMates[3]) {
+// 	console.log("You are in the class");
+// }else{
+// 	console.log("Would you like to join the class?");
+// }
+
+if(classMates.indexOf(name) > -1) {
+	alert("I'm glad that you are in class");
+}
+
+// Loops
+var theClass = ['Shirlette', 'Jackson', 'JT', 'Summer', 'Alex', 'Paige', 'Dave', 'Eric', 'Danielle', 'Dan', 'Danny', 'Brett', 'Wes', 'Drew', 'Daniel'];
+
+console.dir(theClass);
+for(var i = 0; i < theClass.length; i++) {
+	console.log(theClass[i]);
+}
+
+var dcTeam = ["Rob", "Max", "Jake", "Natalie", "TOby"];
+for(i=0; i<dcTeam.length; i++){
+	if(userName === dcTeam[i]){
+		alert("you work for digitalcrafts");
+		break;
+	}
+}
+
+// Strings are just arrays of characters. If you need to manipualte a string, you can treat it with all the arrays stuff.  You can use length, indexof etc
+
+var d = new Date();
+var day = d.getDay();
+if (day === 0) {
+	alert("Sleep in");
+} else {
+	alert("go to work")
+}
+
+var d = new Date();
+var dateFromTime = d.getTime();
+console.log(dateFromTime);
+var month = d.getMonth();
+var daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var leapYears = []
+console.log(daysInMonths[month]);
+var typedMonth = prompt("Type a month number");
+var typedYear = prompt("Type a year");
+console.log(daysInMonths[typedMonth]);
+
+
+
+
+
+
+
+
+</script>

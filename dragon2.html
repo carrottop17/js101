@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fight the Dragon</title>
+</head>
+<body>
+
+<div id="game">
+	<img name="dragon" src="dragon.png">
+	<p>You must choose to fight or flee from the Dragon!</p>
+	<p><input type="button" onclick="fight();" value="Fight!">
+	<input type="button" onclick="flee();" value="Flee!"></p>
+
+	<img name="die1" src="d1.gif">
+		
+	
+	<img name="die2" src="d1.gif">
+		
+	<p><input type="button" onclick="rollDice();" value="Player Roll"></p>
+
+	<img name="die3" src="d1.gif">
+		
+	
+	<img name="die4" src="d1.gif">
+		
+	<p><input type="button" onclick="rollDiceDragon();" value="Dragon Roll"></p>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	document.getElementById('die1');
+
+		
+
+	function rollDice() {
+		var randomDie1 = Math.floor(Math.random() * 6) + 1
+		var randomDie2 = Math.floor(Math.random() * 6) + 1
+		document.images.die1.src = 'd' + randomDie1 + '.gif';
+		document.images.die2.src = 'd' + randomDie2 + '.gif';
+		return randomDie1 + randomDie2;
+		
+	}
+
+	var totalPlayerAttack = rolldice();
+	var dragonHP = 20
+	while (dragonHP > 0) {
+		dragonHP = dragonHP - totalPlayerAttack
+	}
+
+		
+
+	function rollDiceDragon() {
+		var randomDie3 = Math.floor(Math.random() * 6) + 1
+		var randomDie4 = Math.floor(Math.random() * 6) + 1
+		document.images.die3.src = 'd' + randomDie3 + '.gif';
+		document.images.die4.src = 'd' + randomDie4 + '.gif';
+
+	}
+
+	function fight(){
+		alert("You must roll a 9 or higher or you will be burnt to a crisp!");
+	}
+
+	function flee(){
+		document.images.dragon.src = 'flee.png';
+		alert("You are a cowardly dog!")
+	}
+
+	// var player = 20;
+	// var dragon = 20;
+	// var totalPlayerAttack = randomDie1 + randomDie2;
+	// dragon = dragon - totalPlayerAttack;
+	// console.log(dragon);
+
+
+
+
+</script>
+</body>
+</html>
